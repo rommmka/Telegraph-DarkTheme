@@ -1,12 +1,13 @@
 /*Variables*/
 
 :root {
-  --main-text:      #FAF3E3;
-  --background:     #000000;
-  --side-color:     #FF9F29;
-  --headings:       #1A4D2E;
-  --button-bg:      #1A4D2E;
-  --button-text:    #FAF3E3;
+  --main-text:        #FAF3E3;
+  --background:       #000000;
+  --side-color:       #FF9F29;
+  --headings:         #FF9F29;
+  --blockquote-brdr:  #FF9F29;
+  --button-bg:        #1A4D2E;
+  --button-text:      #FAF3E3;
 }
 
 /*  Background  */
@@ -19,9 +20,23 @@ body {
   color: var(--main-text);
 }
 
+
 .tl_article h1, .tl_article h2, .tl_article .tl_article_content, .tl_article .tl_article_content {
   color: var(--headings);
 }
+
+.tl_page .tl_article .tl_article_content h3, 
+.tl_page .tl_article .tl_article_content h4 {
+  color: var(--headings);
+}
+ 
+
+
+.tl_page .tl_article .tl_article_content blockquote {
+  opacity: .7;
+  border-left-color: var(--blockquote-brdr);
+}
+
 
 /*  The color of the side of the text */
 .tl_article.tl_article_edit.title_focused [data-label]:after {
