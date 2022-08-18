@@ -1,24 +1,35 @@
+/*Variables*/
+
+:root {
+  --main-text:      #FAF3E3;
+  --background:     #000000;
+  --side-color:     #FF9F29;
+  --headings:       #1A4D2E;
+  --button-bg:      #1A4D2E;
+  --button-text:    #FAF3E3;
+}
+
 /*  Background  */
 body {
-  background-color: #202020;
+  background-color: var(--background);
 }
 
 /*  Main text color */
 .tl_article .tl_article_content, .tl_article .tl_article_content .ql-editor * {
-  color: #f3f4f8;
+  color: var(--main-text);
 }
 
 .tl_article h1, .tl_article h2, .tl_article .tl_article_content, .tl_article .tl_article_content {
-  color: #79828B;
+  color: var(--headings);
 }
 
 /*  The color of the side of the text */
 .tl_article.tl_article_edit.title_focused [data-label]:after {
-  color: #f3f4f8;
+  color: var(--side-color);
 }
 
 /*  The publish and edit button  */
 .tl_article_edit .publish_button, .tl_article_saving .publish_button, .tl_article .share_button, .tl_article_editable .edit_button {
-  color: white;
-  background-color: #404040;
+  color: var(--button-text);
+  background-color: var(--button-bg);
 }
